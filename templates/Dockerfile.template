@@ -2,7 +2,8 @@ FROM node:${VERSION}-alpine
 MAINTAINER Chris Garrett (https://github.com/chris-garrett/docker-node)
 LABEL description="Node image ${VERSION}"
 
-RUN apk --no-cache add --update \
+RUN apk --no-cache add -U ca-certificates openssl && update-ca-certificates
+RUN apk --no-cache add -U \
   bash \
   vim \
   wget \

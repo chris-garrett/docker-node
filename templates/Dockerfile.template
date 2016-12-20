@@ -16,11 +16,9 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 RUN npm i -g pm2 && npm cache clean
 
-RUN adduser -s /bin/bash -D sprout
-
-COPY ./bash_aliases /home/sprout/.bashrc
-COPY ./vimrc /home/sprout/.vimrc
-RUN chown sprout:sprout /home/sprout/.bashrc /home/sprout/.vimrc \
+COPY ./bash_aliases /home/node/.bashrc
+COPY ./vimrc /home/node/.vimrc
+RUN chown node:node /home/node/.bashrc /home/node/.vimrc \
   && ln -sf /usr/bin/vim /usr/bin/vi
 
-USER sprout
+USER node

@@ -1,6 +1,6 @@
-FROM node:6.9.1-alpine
+FROM node:7.10.0-alpine
 MAINTAINER Chris Garrett (https://github.com/chris-garrett/docker-node)
-LABEL description="Node image 6.9.1"
+LABEL description="Node image 7.10.0"
 
 RUN apk --no-cache add -U ca-certificates openssl && update-ca-certificates
 RUN apk --no-cache add -U \

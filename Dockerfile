@@ -1,6 +1,6 @@
-FROM node:7.10.0-alpine
+FROM node:8.1.2-alpine
 MAINTAINER Chris Garrett (https://github.com/chris-garrett/docker-node)
-LABEL description="Node image 7.10.0"
+LABEL description="Node image 8.1.2"
 
 RUN apk --no-cache add -U ca-certificates openssl && update-ca-certificates
 RUN apk --no-cache add -U \
@@ -14,7 +14,7 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
-RUN npm i -g pm2 && npm cache clean
+RUN npm i -g pm2 && npm cache clean --force
 
 COPY ./bash_aliases /home/node/.bashrc
 COPY ./vimrc /home/node/.vimrc

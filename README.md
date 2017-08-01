@@ -1,9 +1,9 @@
 # docker-node
 
-* Node image 7.10.0
+* Node image 7.10.1
 
 ## Versions
-- node/alpine 7.10.0
+- node/alpine 7.10.1
 
 ## Usage
 

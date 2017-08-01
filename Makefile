@@ -1,4 +1,4 @@
-IMAGE_VERSION=7.10.0
+IMAGE_VERSION=7.10.1
 IMAGE_NAME=chrisgarrett/node
 
 all: build

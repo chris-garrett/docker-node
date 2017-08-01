@@ -1,9 +1,9 @@
 # docker-node
 
-* Node image 8.1.2
+* Node image 8.2.1
 
 ## Versions
-- node/alpine 8.1.2
+- node/alpine 8.2.1
 
 ## Usage
 

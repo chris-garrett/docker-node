@@ -21,7 +21,7 @@ RUN apk --no-cache add -U \
   && tar -C /usr/local/bin -xzvf dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
   && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
 
-  && npm i -g pm2 && npm cache clean \
+  && npm i -g pm2 \
 
   && chown node:node /home/node/.bashrc /home/node/.vimrc \
   && ln -sf /usr/bin/vim /usr/bin/vi

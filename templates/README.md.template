@@ -7,6 +7,6 @@
 
 ## Usage
 
-```docker run --rm -v `pwd`/src:/app/src chrisgarrett/node npm run start```
+```docker run --rm chrisgarrett/node node --version```
 
 ## Credits

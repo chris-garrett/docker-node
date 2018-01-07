@@ -1,4 +1,4 @@
-IMAGE_VERSION=8.2.1
+IMAGE_VERSION=8.9.4
 IMAGE_NAME=chrisgarrett/node
 
 all: build

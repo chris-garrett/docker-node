@@ -1,12 +1,12 @@
 # docker-node
 
-* Node image 8.2.1
+* Node image 8.9.4
 
 ## Versions
-- node/alpine 8.2.1
+- node:8.9.4-alpine
 
 ## Usage
 
-```docker run --rm chrisgarrett/node node --version```
+```docker run --rm chrisgarrett/node:8.9.4 node --version```
 
 ## Credits

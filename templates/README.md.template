@@ -3,10 +3,10 @@
 * Node image ${VERSION}
 
 ## Versions
-- node/alpine ${VERSION}
+- node:${VERSION}-alpine
 
 ## Usage
 
-```docker run --rm chrisgarrett/node node --version```
+```docker run --rm chrisgarrett/node:${VERSION} node --version```
 
 ## Credits

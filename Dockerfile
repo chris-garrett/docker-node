@@ -1,6 +1,6 @@
-FROM node:8.9.4-alpine
+FROM node:10.9.0-alpine
 MAINTAINER Chris Garrett (https://github.com/chris-garrett/docker-node)
-LABEL description="Node image 8.9.4"
+LABEL description="Node image 10.9.0"
 
 ARG DOCKERIZE_VERSION=v0.6.0
 COPY ./bash_aliases /home/node/.bashrc
